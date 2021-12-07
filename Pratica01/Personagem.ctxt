@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Personagem
+comment1.params=p
+comment1.target=void\ setPular(Pular)
+comment2.params=c
+comment2.target=void\ setCorrer(Correr)
+comment3.params=a
+comment3.target=void\ setAtacar(Atacar)
+comment4.params=
+comment4.target=void\ pular()
+comment5.params=
+comment5.target=void\ correr()
+comment6.params=
+comment6.target=void\ atacar()
+numComments=7
