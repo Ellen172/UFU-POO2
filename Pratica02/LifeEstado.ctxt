@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=LifeEstado
+comment1.params=y
+comment1.target=int\ sampleMethod(int)
+comment1.text=\r\n\ Um\ exemplo\ de\ um\ m\u00E9todo\ -\ substitua\ este\ coment\u00E1rio\ pelo\ seu\ pr\u00F3prio\r\n\ \r\n\ @param\ \ y\ \ \ \ um\ exemplo\ de\ par\u00E2metro\ para\ um\ m\u00E9todo\r\n\ @return\ \ \ \ \ \ \ \ a\ soma\ de\ x\ e\ y\r\n
+numComments=2
