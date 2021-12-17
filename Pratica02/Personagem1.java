@@ -2,8 +2,9 @@
 public class Personagem1 extends Personagem
 {
     public Personagem1(){
-         setPular(new PularMedio());
+        super(new PularMedio(), new CorrerMedio(), new AtacarForte());
+        /* setPular(new PularMedio());
          setCorrer(new CorrerMedio());
-         setAtacar(new AtacarForte());
+         setAtacar(new AtacarForte()); */
     }
 }

@@ -1,10 +1,24 @@
 
-public abstract class Personagem
+public class Personagem
 {
     private Pular p;
     private Correr c;
     private Atacar a;
     private LifeEstado e;
+    private int vida;
+    
+    Personagem(Correr c, Atacar a) {
+        setCorrer(c);
+        setAtacar(a);
+        setVida(70);
+        setLifeEstado(new EstadoNormal());
+    }
+    
+    Personagem(Pular p, Correr c, Atacar a) {
+        setPular(p);
+        setCorrer(c);
+        setAtacar(a);
+    }
     
     public void setPular(Pular p){
         this.p = p;
@@ -16,7 +30,13 @@ public abstract class Personagem
         this.a = a;
     }
     public void setLifeEstado(LifeEstado e){
-        
+        this.e = e;
+    }
+    public void setVida(int vida){
+        this.vida = vida;
+    }
+    public int getVida(){
+        return vida;
     }
     
     public void pular(){

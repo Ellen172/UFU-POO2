@@ -1,18 +1,31 @@
 
 public abstract class LifeEstado
 {
-    // variáveis de instância - substitua o exemplo abaixo pelo seu código
-    int x;
-
-    /**
-     * Um exemplo de um método - substitua este comentário pelo seu próprio
-     * 
-     * @param  y    um exemplo de parâmetro para um método
-     * @return        a soma de x e y
-     */
-    public int sampleMethod(int y)
-    {
-        // escreva seu código aqui
-        return x + y;
+    private Personagem p;
+    
+    LifeEstado(){
+        
     }
+    LifeEstado(Personagem p){
+        setPersonagem(p);
+    }
+    
+    public void setPersonagem(Personagem p){
+        this.p = p;
+    }
+    public Personagem getPersonagem(){
+        return p;
+    }
+    
+    public void GanhaVida(int bonus){
+        this.p.setVida(this.p.getVida()+bonus);
+        this.verificarEstado();
+    }
+    
+    public void PerdeVida(int perda){
+        this.p.setVida(this.p.getVida()-perda);
+        this.verificarEstado();
+    }
+    
+    protected abstract void verificarEstado();
 }
