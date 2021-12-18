@@ -1,6 +1,15 @@
 #BlueJ class context
 comment0.target=LifeEstado
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ Um\ exemplo\ de\ um\ m\u00E9todo\ -\ substitua\ este\ coment\u00E1rio\ pelo\ seu\ pr\u00F3prio\r\n\ \r\n\ @param\ \ y\ \ \ \ um\ exemplo\ de\ par\u00E2metro\ para\ um\ m\u00E9todo\r\n\ @return\ \ \ \ \ \ \ \ a\ soma\ de\ x\ e\ y\r\n
-numComments=2
+comment1.params=p
+comment1.target=LifeEstado(Personagem)
+comment2.params=p
+comment2.target=void\ setPersonagem(Personagem)
+comment3.params=
+comment3.target=Personagem\ getPersonagem()
+comment4.params=bonus
+comment4.target=void\ ganhaVida(int)
+comment5.params=perda
+comment5.target=void\ perdeVida(int)
+comment6.params=
+comment6.target=void\ verificarEstado()
+numComments=7

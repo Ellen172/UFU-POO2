@@ -3,9 +3,6 @@ public abstract class LifeEstado
 {
     private Personagem p;
     
-    LifeEstado(){
-        
-    }
     LifeEstado(Personagem p){
         setPersonagem(p);
     }
@@ -17,12 +14,11 @@ public abstract class LifeEstado
         return p;
     }
     
-    public void GanhaVida(int bonus){
+    public void ganhaVida(int bonus){
         this.p.setVida(this.p.getVida()+bonus);
         this.verificarEstado();
     }
-    
-    public void PerdeVida(int perda){
+    public void perdeVida(int perda){
         this.p.setVida(this.p.getVida()-perda);
         this.verificarEstado();
     }

@@ -7,11 +7,9 @@ public class Personagem
     private LifeEstado e;
     private int vida;
     
-    Personagem(Correr c, Atacar a) {
-        setCorrer(c);
-        setAtacar(a);
+    Personagem() {
         setVida(70);
-        setLifeEstado(new EstadoNormal());
+        setLifeEstado(new EstadoNormal(this));
     }
     
     Personagem(Pular p, Correr c, Atacar a) {
@@ -32,6 +30,9 @@ public class Personagem
     public void setLifeEstado(LifeEstado e){
         this.e = e;
     }
+    public LifeEstado getLifeEstado(){
+        return e;
+    }
     public void setVida(int vida){
         this.vida = vida;
     }
@@ -47,5 +48,16 @@ public class Personagem
     }
     public void atacar(){
         a.atacar();
+    }
+    
+    public void ganhaVida(int bonus){
+        e.ganhaVida(bonus);
+        System.out.println("vida = " + this.getVida());
+        System.out.println("estado = " + this.getLifeEstado().getClass().getName());
+    }
+    public void perdeVida(int perda){
+        e.perdeVida(perda);
+        System.out.println("vida = " + this.getVida());
+        System.out.println("estado = " + this.getLifeEstado().getClass().getName());
     }
 }

@@ -2,16 +2,20 @@
 //  nível de energia do personagem está maior do que 0 e abaixo de 30%
 public class EstadoPerigo extends LifeEstado
 {
-    EstadoPerigo(){
-        super(new Personagem(new CorrerDevagar(), new AtacarFraco()));
+    public EstadoPerigo(Personagem persona){
+        super(persona);
+        this.getPersonagem().setCorrer(new CorrerDevagar());
+        this.getPersonagem().setAtacar(new AtacarFraco());
     }
     
     public void verificarEstado(){
         if(this.getPersonagem().getVida() < 0){
-            this.getPersonagem().setLifeEstado(new EstadoMorto());
+            System.out.println("Estado Morto!");
+            System.exit(0);
         }
         else if(this.getPersonagem().getVida() >= 30){
-            this.getPersonagem().setLifeEstado(new EstadoNormal());
+            this.getPersonagem().setLifeEstado(new EstadoNormal(this.getPersonagem()));
+            this.getPersonagem().getLifeEstado().verificarEstado();
         }
     }
 }
