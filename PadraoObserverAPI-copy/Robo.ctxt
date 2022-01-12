@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Robo
+comment1.params=x\ y
+comment1.target=Robo(int,\ int)
+comment2.params=subject\ arg
+comment2.target=void\ update(java.util.Observable,\ java.lang.Object)
+numComments=3
