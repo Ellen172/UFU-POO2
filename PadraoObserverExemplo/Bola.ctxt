@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Bola
+comment1.params=x\ y
+comment1.target=Bola(int,\ int)
+comment2.params=o
+comment2.target=void\ addObserver(Observador)
+comment3.params=o
+comment3.target=void\ removeObserver(Observador)
+comment4.params=
+comment4.target=void\ notifyObservers()
+comment5.params=
+comment5.target=int\ getX()
+comment6.params=
+comment6.target=int\ getY()
+comment7.params=x\ y
+comment7.target=void\ setPos(int,\ int)
+comment8.params=
+comment8.target=void\ show()
+numComments=9
