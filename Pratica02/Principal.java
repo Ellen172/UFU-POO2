@@ -1,8 +1,7 @@
 
 public class Principal
 {
-    public static void main(String args[]){
-        System.out.println("-------------------------------");
+    public static void main(String args[]){        
         Personagem persona = new Personagem();
         // inicia com 70 - estado normal 
         

@@ -40,6 +40,7 @@ public class Personagem
         return vida;
     }
     
+    
     public void pular(){
         p.pular();
     }

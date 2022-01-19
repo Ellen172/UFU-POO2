@@ -41,7 +41,7 @@ public class Game extends JPanel {
                j8.setX(j8.getX()+10);
                
             if (e.getKeyCode() == KeyEvent.VK_UP)
-            j8.setY(j8.getY()-10);
+                j8.setY(j8.getY()-10);
             
             if (e.getKeyCode() == KeyEvent.VK_DOWN)
                j8.setY(j8.getY()+10);    
