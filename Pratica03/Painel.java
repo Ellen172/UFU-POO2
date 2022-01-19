@@ -10,9 +10,7 @@ import java.awt.event.KeyListener;
 public class Painel extends JPanel
 {
     private Personagem persona;
-    private Inimigo i1;
-    private Inimigo i2;
-    private Inimigo i3;
+    private Inimigo enemy[] = new Inimigo[3];
     
     public Painel() {
         KeyListener listener = new MyKeyListener();
@@ -37,6 +35,13 @@ public class Painel extends JPanel
             
             if (e.getKeyCode() == KeyEvent.VK_DOWN)
                persona.setY(persona.getY()+10); 
+            
+            if (e.getKeyCode() == KeyEvent.VK_SPACE)
+                for(int i=0; i<enemy.length; i++){
+                    if(Math.abs(persona.getX() - enemy[i].getX())==0 
+                    && Math.abs(persona.getX() - enemy[i].getX())==0)
+                    enemy[i].perdeVida();
+                }
         }
         
         public void keyReleased(KeyEvent e) {
@@ -51,11 +56,11 @@ public class Painel extends JPanel
         g2d.setColor(Color.BLACK);
         g2d.fillOval(persona.getX(), persona.getY(), 20, 20);
         g2d.setColor(Color.RED);
-        g2d.fillOval(i1.getX(), i1.getY(), 20, 20);
+        g2d.fillOval(enemy[0].getX(), enemy[0].getY(), 20, 20);
         g2d.setColor(Color.BLUE);
-        g2d.fillOval(i2.getX(), i2.getY(), 20, 20);
+        g2d.fillOval(enemy[1].getX(), enemy[1].getY(), 20, 20);
         g2d.setColor(Color.GREEN);
-        g2d.fillOval(i3.getX(), i3.getY(), 20, 20);
+        g2d.fillOval(enemy[2].getX(), enemy[2].getY(), 20, 20);
     }
     
     public void jogar (Painel painel) throws InterruptedException {
@@ -66,13 +71,13 @@ public class Painel extends JPanel
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
     
         persona = new Personagem();
-        i1 = new Inimigo(10, 10);
-        i2 = new Inimigo(210,20);
-        i3 = new Inimigo(-30, 90);
+        enemy[0] = new Inimigo(10, 10);
+        enemy[1] = new Inimigo(210,20);
+        enemy[2] = new Inimigo(-30, 90);
         
-        persona.addObserver(i1);
-        persona.addObserver(i2);
-        persona.addObserver(i3);
+        for(int i=0; i<enemy.length; i++){
+            persona.addObserver(enemy[i]);
+        }
         
         while (true) {
             persona.show();           

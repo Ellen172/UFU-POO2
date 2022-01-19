@@ -2,7 +2,7 @@
 import java.util.Observer;
 import java.util.Observable;
 
-public class Inimigo implements Observer
+public class Inimigo extends Personagem implements Observer
 {
     private int x;
     private int y;
@@ -21,8 +21,17 @@ public class Inimigo implements Observer
     }
     
     public Inimigo(int x, int y){
+        setVida(70);
+        setLifeEstado(new EstadoNormal(this));
         setX(x);
         setY(y);
+    }
+    
+    public void perdeVida(){
+        System.out.println("Inimigo: "+this+" atacado!" );
+        super.getLifeEstado().perdeVida(5);
+        System.out.println("vida = " + this.getVida());
+        System.out.println("estado = " + this.getLifeEstado().getClass().getName());
     }
     
     public void update(Observable subject, Object arg){
