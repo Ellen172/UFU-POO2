@@ -12,6 +12,7 @@ public class Painel extends JPanel
     private Personagem persona;
     private Inimigo i1;
     private Inimigo i2;
+    private Inimigo i3;
     
     public Painel() {
         KeyListener listener = new MyKeyListener();
@@ -53,6 +54,8 @@ public class Painel extends JPanel
         g2d.fillOval(i1.getX(), i1.getY(), 20, 20);
         g2d.setColor(Color.BLUE);
         g2d.fillOval(i2.getX(), i2.getY(), 20, 20);
+        g2d.setColor(Color.GREEN);
+        g2d.fillOval(i3.getX(), i3.getY(), 20, 20);
     }
     
     public void jogar (Painel painel) throws InterruptedException {
@@ -64,10 +67,12 @@ public class Painel extends JPanel
     
         persona = new Personagem();
         i1 = new Inimigo(10, 10);
-        i2 = new Inimigo(20,20);
+        i2 = new Inimigo(210,20);
+        i3 = new Inimigo(-30, 90);
         
         persona.addObserver(i1);
         persona.addObserver(i2);
+        persona.addObserver(i3);
         
         while (true) {
             persona.show();           

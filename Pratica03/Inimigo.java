@@ -31,6 +31,8 @@ public class Inimigo implements Observer
         if((Math.abs(this.x-persona.getX())==0) 
             && (Math.abs(this.y-persona.getY())==0)) {
                 // inimigo chegou ate o persongem
+                System.out.println("Inimigo "+this+" ataca o personagem!");
+                persona.perdeVida(10);
             }
         else {
             // andar em direção ao personagem

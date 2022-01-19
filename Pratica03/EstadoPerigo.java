@@ -9,7 +9,7 @@ public class EstadoPerigo extends LifeEstado
     }
     
     public void verificarEstado(){
-        if(this.getPersonagem().getVida() < 0){
+        if(this.getPersonagem().getVida() <= 0){
             System.out.println("Estado Morto!");
             System.exit(0);
         }
