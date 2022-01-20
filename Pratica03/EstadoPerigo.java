@@ -12,7 +12,7 @@ public class EstadoPerigo extends LifeEstado
         if(this.getPersonagem().getVida() <= 0){
             System.out.println("Estado Morto!");
             if(this.getPersonagem() instanceof Inimigo){
-                
+                this.getPersonagem();
             } else {
                 System.exit(0);
             }

@@ -6,11 +6,15 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.util.ArrayList;
 
 public class Painel extends JPanel
 {
     private Personagem persona;
     private Inimigo enemy[] = new Inimigo[3];
+    ArrayList<Personagem> lista = new ArrayList<>();
+    
+    lista.add(new Inimigo());
     
     public Painel() {
         KeyListener listener = new MyKeyListener();
