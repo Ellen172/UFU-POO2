@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Escudo01
+comment1.params=p
+comment1.target=Escudo01(Personagem)
+comment2.params=p
+comment2.target=void\ setPersonagem(Personagem)
+comment3.params=
+comment3.target=Personagem\ getPersonagem()
+comment4.params=perda
+comment4.target=void\ perdeVida(int)
+numComments=5
