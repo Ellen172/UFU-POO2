@@ -28,7 +28,7 @@ public class Inimigo extends Personagem implements Observer
     }
     
     public void perdeVida(){
-        System.out.println("Inimigo: "+this+" atacado!" );
+        System.out.println("Inimigo "+this+" atacado!" );
         super.getLifeEstado().perdeVida(5);
         System.out.println("vida = " + this.getVida());
         System.out.println("estado = " + this.getLifeEstado().getClass().getName());
