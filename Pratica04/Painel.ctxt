@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Painel
+comment1.params=persona\ escudoFraco\ escudoMedio\ escudoForte
+comment1.target=Painel(Personagem,\ Escudo,\ Escudo,\ Escudo)
+comment2.params=g
+comment2.target=void\ paint(java.awt.Graphics)
+comment3.params=painel
+comment3.target=void\ jogar(Painel)
+numComments=4
