@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Decorador
+comment1.params=obj
+comment1.target=Decorador(Objeto)
+comment2.params=
+comment2.target=java.lang.String\ desenhar()
+numComments=3
