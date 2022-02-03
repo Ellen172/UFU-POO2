@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=Produto
+comment1.params=
+comment1.target=Produto()
+comment2.params=
+comment2.target=Estado\ getState()
+comment3.params=state
+comment3.target=void\ setState(Estado)
+comment4.params=
+comment4.target=int\ getQtd()
+comment5.params=qtd
+comment5.target=void\ setQtd(int)
+comment6.params=nro
+comment6.target=void\ venda(int)
+comment7.params=nro
+comment7.target=void\ compra(int)
+numComments=8

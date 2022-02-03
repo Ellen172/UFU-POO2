@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Disponivel
+comment1.params=prod
+comment1.target=Disponivel(Produto)
+comment2.params=
+comment2.target=void\ verificaEstado()
+numComments=3
