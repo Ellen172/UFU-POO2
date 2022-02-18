@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=EstadoForte
+comment1.params=personagem
+comment1.target=EstadoForte(Personagem)
+comment2.params=
+comment2.target=void\ verificarEstado()
+numComments=3

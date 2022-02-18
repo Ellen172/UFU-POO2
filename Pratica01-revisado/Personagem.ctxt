@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=Personagem
+comment1.params=nome
+comment1.target=void\ setNome(java.lang.String)
+comment10.params=
+comment10.target=void\ pular()
+comment11.params=
+comment11.target=void\ correr()
+comment2.params=
+comment2.target=java.lang.String\ getNome()
+comment3.params=ataque
+comment3.target=void\ setAtaque(Ataque)
+comment4.params=
+comment4.target=Ataque\ getAtaque()
+comment5.params=pulo
+comment5.target=void\ setPulo(Pulo)
+comment6.params=
+comment6.target=Pulo\ getPulo()
+comment7.params=corrida
+comment7.target=void\ setCorrida(Corrida)
+comment8.params=
+comment8.target=Corrida\ getCorrida()
+comment9.params=
+comment9.target=void\ atacar()
+numComments=12
