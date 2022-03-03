@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=Multiplicacao
+comment1.params=op1\ op2
+comment1.target=Multiplicacao(ExpressaoAritmetica,\ ExpressaoAritmetica)
+comment2.params=
+comment2.target=int\ operacao()
+numComments=3

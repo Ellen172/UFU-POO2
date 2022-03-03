@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=CarroDecorador
+comment1.params=carroDecorado
+comment1.target=CarroDecorador(Carro)
+comment2.params=
+comment2.target=double\ getCusto()
+comment3.params=
+comment3.target=java.lang.String\ getDescricao()
+numComments=4
