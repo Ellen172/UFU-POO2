@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=SimplePersonagemFactory
+comment1.params=tipo
+comment1.target=Personagem\ createPersonagem(int)
+comment2.params=
+comment2.target=Personagem\ createMago()
+comment3.params=
+comment3.target=Personagem\ createFeiticeiro()
+comment4.params=
+comment4.target=Personagem\ createCampones()
+numComments=5
