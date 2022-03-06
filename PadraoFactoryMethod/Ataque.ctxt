@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Ataque
+comment1.params=ataqueNome
+comment1.target=void\ setAtaqueNome(java.lang.String)
+comment2.params=
+comment2.target=java.lang.String\ getAtaqueNome()
+comment3.params=personagem
+comment3.target=void\ atacar(Personagem)
+numComments=4
