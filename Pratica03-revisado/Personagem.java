@@ -73,16 +73,16 @@ public class Personagem extends Observable
     
     public void ganhaVida(int bonus){
         System.out.println("--"+this+" Ganha Vida--");
-        System.out.println("Vida antiga: " + this.getVida() + " | Estado antigo: " + this.getEstado());
+        System.out.println("Vida antiga: " + this.getVida());
         estado.ganhaVida(bonus);
-        System.out.println("Vida atual: " + this.getVida() + " | Estado atual: " + this.getEstado());
+        System.out.println("Vida atual: " + this.getVida());
         System.out.println();
     }
     public void perdeVida(int perda){
         System.out.println("--"+this+" Perde Vida--");
-        System.out.println("Vida antiga: " + this.getVida() + " | Estado antigo: " + this.getEstado());
+        System.out.println("Vida antiga: " + this.getVida());
         estado.perdeVida(perda);
-        System.out.println("Vida atual: " + this.getVida() + " | Estado atual: " + this.getEstado());
+        System.out.println("Vida atual: " + this.getVida());
         System.out.println();
     }
     public void show() {

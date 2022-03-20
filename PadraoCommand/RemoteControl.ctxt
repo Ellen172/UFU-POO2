@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=RemoteControl
+comment1.params=comando
+comment1.target=void\ setCommand(Command)
+comment2.params=
+comment2.target=Command\ getCommand()
+comment3.params=
+comment3.target=void\ botaoPressionado()
+numComments=4

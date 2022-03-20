@@ -18,5 +18,6 @@ public class EstadoNormal extends Estado
             // energia do personagem acima de 70%
             this.getPersonagem().setEstado(new EstadoForte(this.getPersonagem()));
         }
+
     }
 }

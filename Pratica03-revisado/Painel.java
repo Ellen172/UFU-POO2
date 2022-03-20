@@ -10,9 +10,10 @@ import java.util.ArrayList;
 
 public class Painel extends JPanel
 {
+    ArrayList<Inimigo> inimigos = new ArrayList<>();
     private Personagem personagem;
     private Inimigo enemy[] = new Inimigo[3];
-    
+        
     public Painel() {
         KeyListener listener = new MyKeyListener();
         addKeyListener(listener);
@@ -38,10 +39,14 @@ public class Painel extends JPanel
                personagem.setY(personagem.getY()+10); 
             
             if (e.getKeyCode() == KeyEvent.VK_SPACE)
-                for(int i=0; i<enemy.length; i++){
-                    if(Math.abs(personagem.getX() - enemy[i].getX())==0 
-                        && Math.abs(personagem.getX() - enemy[i].getX())==0)
-                            personagem.atacar(enemy[i]);
+                for(int i=0; i<inimigos.size(); i++){
+                    if(Math.abs(personagem.getX() - inimigos.get(i).getX())==0 
+                        && Math.abs(personagem.getX() - inimigos.get(i).getX())==0)
+                            personagem.atacar(inimigos.get(i));
+                            if(inimigos.get(i).getVida()<=0){
+                                personagem.deleteObserver(inimigos.get(i));
+                                inimigos.remove(inimigos.get(i));
+                            }
                 }
         }
         
@@ -56,12 +61,19 @@ public class Painel extends JPanel
         
         g2d.setColor(Color.BLACK);
         g2d.fillOval(personagem.getX(), personagem.getY(), 20, 20);
-        g2d.setColor(Color.RED);
-        g2d.fillOval(enemy[0].getX(), enemy[0].getY(), 20, 20);
-        g2d.setColor(Color.BLUE);
-        g2d.fillOval(enemy[1].getX(), enemy[1].getY(), 20, 20);
-        g2d.setColor(Color.GREEN);
-        g2d.fillOval(enemy[2].getX(), enemy[2].getY(), 20, 20);
+        for(int i=0; i<inimigos.size(); i++){
+            if(inimigos.get(i).getEstado().getClass().getName() == "EstadoForte"){
+                g2d.setColor(Color.BLUE); 
+            }
+            else if(inimigos.get(i).getEstado().getClass().getName() == "EstadoPerigo"){
+                g2d.setColor(Color.RED); 
+            }
+            else {
+                g2d.setColor(Color.GRAY);
+            }
+            
+            g2d.fillOval(inimigos.get(i).getX(), inimigos.get(i).getY(), 20, 20);
+        }
     }
     
     public void jogar (Painel painel) throws InterruptedException {
@@ -72,17 +84,23 @@ public class Painel extends JPanel
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);        
     
         personagem = new Personagem(50, 50);
-        enemy[0] = new Inimigo(10, 10);
-        enemy[1] = new Inimigo(210,20);
-        enemy[2] = new Inimigo(-30, 90);
+        enemy[0] = new InimigoNormal(10, 10);
+        enemy[1] = new InimigoFraco(210,20);
+        enemy[2] = new InimigoForte(-30, 90);
         
-        for(int i=0; i<enemy.length; i++){
-            personagem.addObserver(enemy[i]);
+        inimigos.add(enemy[0]);
+        inimigos.add(enemy[1]);
+        inimigos.add(enemy[2]);
+        
+        for(int i=0; i<inimigos.size(); i++){
+            personagem.addObserver(inimigos.get(i));
         }
+        
         
         while (true) {
             personagem.show();           
             painel.repaint();
+            System.out.println("\nTotal de inimigos no jogo: " + inimigos.size()+ "\n");
             Thread.sleep(50);
         }
     }

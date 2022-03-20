@@ -6,6 +6,7 @@ public class EstadoForte extends Estado
         this.getPersonagem().setPulo(new PuloAlto());
         this.getPersonagem().setCorrida(new CorridaRapida());
         this.getPersonagem().setAtaque(new AtaqueForte());
+        
     }
     
     public void verificarEstado(){
@@ -13,6 +14,7 @@ public class EstadoForte extends Estado
             // energia do personagem abaixo de 70%
             this.getPersonagem().setEstado(new EstadoNormal(this.getPersonagem()));
             this.getPersonagem().getEstado().verificarEstado();
+            
         }
     }
 }

@@ -1,11 +1,12 @@
 import java.util.Observer;
 import java.util.Observable;
 
-public class Inimigo extends Personagem implements Observer
+public abstract class Inimigo extends Personagem implements Observer
 {
     public Inimigo(int x, int y){
         super(x, y);
     }
+    
     public void update(Observable subject, Object arg){  
         Personagem personagem = (Personagem)subject;
         
@@ -13,7 +14,7 @@ public class Inimigo extends Personagem implements Observer
             && (Math.abs(this.getY()-personagem.getY())==0)) {
                 // inimigo chegou ate o persongem
                 System.out.println("Inimigo "+ this +" ataca o personagem!");
-                personagem.perdeVida(10);
+                personagem.perdeVida(this.getAtaque().getValor());
             }
         else {
             // andar em direção ao personagem
