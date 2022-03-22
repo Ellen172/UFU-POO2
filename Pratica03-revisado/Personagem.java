@@ -12,8 +12,8 @@ public class Personagem extends Observable
     private int y;
     
     public Personagem(int x, int y){
-        setVida(70);
-        setEstado(new EstadoNormal(this)); // estado irá inicializar pulo, ataque e corrida
+        setVida(500);
+        setEstado(new EstadoForte(this)); // estado irá inicializar pulo, ataque e corrida
         setX(x);
         setY(y);
     }

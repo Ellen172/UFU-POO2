@@ -27,16 +27,16 @@ public class Painel extends JPanel
         @Override
         public void keyPressed(KeyEvent e) {
             if (e.getKeyCode() == KeyEvent.VK_LEFT)
-               personagem.setX(personagem.getX()-10);
+               personagem.setX(personagem.getX()-personagem.getCorrida().getValor());
                
             if (e.getKeyCode() == KeyEvent.VK_RIGHT)
-               personagem.setX(personagem.getX()+10);
+               personagem.setX(personagem.getX()+personagem.getCorrida().getValor());
                
             if (e.getKeyCode() == KeyEvent.VK_UP)
-                personagem.setY(personagem.getY()-10);
+                personagem.setY(personagem.getY()-personagem.getCorrida().getValor());
             
             if (e.getKeyCode() == KeyEvent.VK_DOWN)
-               personagem.setY(personagem.getY()+10); 
+               personagem.setY(personagem.getY()+personagem.getCorrida().getValor()); 
             
             if (e.getKeyCode() == KeyEvent.VK_SPACE)
                 for(int i=0; i<inimigos.size(); i++){
@@ -59,14 +59,23 @@ public class Painel extends JPanel
         super.paint(g);
         Graphics2D g2d = (Graphics2D) g;
         
-        g2d.setColor(Color.BLACK);
+        // personagem
+        if(personagem.getEstado().getClass().getName() == "EstadoForte"){
+            g2d.setColor(Color.MAGENTA);
+        } else if(personagem.getEstado().getClass().getName() == "EstadoPerigo"){
+            g2d.setColor(Color.RED);
+        } else {
+            g2d.setColor(Color.BLACK);
+        }
         g2d.fillOval(personagem.getX(), personagem.getY(), 20, 20);
+        
+        // inimigos
         for(int i=0; i<inimigos.size(); i++){
             if(inimigos.get(i).getEstado().getClass().getName() == "EstadoForte"){
                 g2d.setColor(Color.BLUE); 
             }
             else if(inimigos.get(i).getEstado().getClass().getName() == "EstadoPerigo"){
-                g2d.setColor(Color.RED); 
+                g2d.setColor(Color.ORANGE); 
             }
             else {
                 g2d.setColor(Color.GRAY);
