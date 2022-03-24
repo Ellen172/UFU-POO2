@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Escudo
+comment1.params=
+comment1.target=Escudo\ getSucessor()
+comment2.params=sucessor
+comment2.target=void\ setSucessor(Escudo)
+comment3.params=perda
+comment3.target=void\ diminuiAtaque(int)
+numComments=4
