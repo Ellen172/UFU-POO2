@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Robo
+comment0.text=\ \r\n\ Personagem\:\ robo\ \r\n\ Ataque\:\ raio\ laser\ |\ precisao\r\n\ Corrida\:\ lenta\r\n\ Pulo\:\ medio\r\n
+comment1.params=x\ y
+comment1.target=Robo(int,\ int)
+numComments=2

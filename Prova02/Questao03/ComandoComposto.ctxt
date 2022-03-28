@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=ComandoComposto
+comment0.text=\ \r\n\ O\ m\u00E9todo\ execute()\ de\ um\ comando\ composto\ deve\ varrer\ a\ lista\ de\ comandos\ \r\n\ do\ bloco\ e\ executar\ cada\ um\ deles.\r\n
+comment1.params=nome\ n
+comment1.target=ComandoComposto(java.lang.String[],\ int)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3

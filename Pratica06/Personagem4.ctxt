@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Personagem4
+comment0.text=\r\n\ ataque\ forte\ \r\n\ poder\ fraco\ \r\n\ corrida\ devagar\r\n\ pulo\ baixo\r\n
+comment1.params=x\ y
+comment1.target=Personagem4(int,\ int)
+numComments=2

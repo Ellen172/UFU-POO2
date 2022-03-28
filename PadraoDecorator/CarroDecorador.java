@@ -5,6 +5,7 @@ public abstract class CarroDecorador extends Carro {
     public CarroDecorador(Carro carroDecorado) {
         this.carroDecorado = carroDecorado;
     }
+    
     public double getCusto() {
         return carroDecorado.getCusto() + super.getCusto();
     }

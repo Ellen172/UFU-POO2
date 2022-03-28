@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=FaseFuturista
+comment1.params=qtd\ velocidade\ nome\ caminho1\ caminho2
+comment1.target=FaseFuturista(int,\ int,\ java.lang.String,\ Fase,\ Fase)
+comment2.params=x\ y
+comment2.target=Inimigo\ createInimigo(int,\ int)
+numComments=3

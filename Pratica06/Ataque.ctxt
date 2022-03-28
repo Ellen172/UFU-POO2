@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Ataque
+comment1.params=valor
+comment1.target=void\ setValor(int)
+comment2.params=
+comment2.target=int\ getValor()
+comment3.params=inimigo
+comment3.target=void\ atacar(Inimigo)
+numComments=4

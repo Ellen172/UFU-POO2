@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=CampoForca
+comment1.params=personagem
+comment1.target=CampoForca(Personagem)
+comment2.params=personagem
+comment2.target=void\ setPersonagem(Personagem)
+comment3.params=
+comment3.target=Personagem\ getPersonagem()
+comment4.params=perda
+comment4.target=void\ diminuiAtaque(int)
+numComments=5

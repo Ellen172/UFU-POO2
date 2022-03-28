@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\ Para\ testar\ ,\ foi\ criada\ a\ classe\ produto.\ \r\n\ Ao\ receber\ do\ fornecedor1\ ,\ a\ quantidade\ de\ produtos\ aumenta\ em\ 10\r\n\ Ao\ receber\ do\ fornecedor2\ ,\ a\ quantidade\ de\ produtos\ aumenta\ em\ 20\r\n\ Ao\ receber\ do\ fornecedor3\ ,\ a\ quantidade\ de\ produtos\ aumenta\ em\ 30\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+numComments=2

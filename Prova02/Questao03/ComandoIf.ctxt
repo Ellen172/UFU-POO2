@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ComandoIf
+comment1.params=nome\ comandoif
+comment1.target=ComandoIf(java.lang.String,\ Comando)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3

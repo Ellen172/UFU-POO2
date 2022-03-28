@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=CorridaVeloz
+comment1.params=velocidade
+comment1.target=CorridaVeloz(int)
+comment2.params=
+comment2.target=void\ correr()
+numComments=3

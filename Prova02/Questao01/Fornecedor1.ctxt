@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Fornecedor1
+comment1.params=produto
+comment1.target=Fornecedor1(Produto)
+comment2.params=produto
+comment2.target=void\ setProduto(Produto)
+comment3.params=
+comment3.target=Produto\ getProduto()
+comment4.params=
+comment4.target=void\ enviarProduto()
+numComments=5

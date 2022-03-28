@@ -9,6 +9,7 @@ public abstract class Carro {
     public String getDescricao() {
         return this.descricao;
     }
+    
     public void setCusto(double custo){
         this.custo = custo;
     }

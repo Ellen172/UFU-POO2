@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.target=Fase
+comment1.params=qtd\ velocidade\ nome\ caminho1\ caminho2
+comment1.target=Fase(int,\ int,\ java.lang.String,\ Fase,\ Fase)
+comment10.params=caminho2
+comment10.target=void\ setCaminho2(Fase)
+comment11.params=
+comment11.target=Fase\ getCaminho2()
+comment12.params=x\ y
+comment12.target=Inimigo\ createInimigo(int,\ int)
+comment2.params=qtd
+comment2.target=void\ setQtd(int)
+comment3.params=
+comment3.target=int\ getQtd()
+comment4.params=velocidade
+comment4.target=void\ setVelocidade(int)
+comment5.params=
+comment5.target=int\ getVelocidade()
+comment6.params=nome
+comment6.target=void\ setNome(java.lang.String)
+comment7.params=
+comment7.target=java.lang.String\ getNome()
+comment8.params=caminho1
+comment8.target=void\ setCaminho1(Fase)
+comment9.params=
+comment9.target=Fase\ getCaminho1()
+numComments=13

@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Ciborgue
+comment0.text=\ \r\n\ Personagem\:\ ciborgue\ \r\n\ Ataque\:\ bomba\ |\ alcance\r\n\ Corrida\:\ media\r\n\ Pulo\:\ alto\r\n
+comment1.params=x\ y
+comment1.target=Ciborgue(int,\ int)
+numComments=2

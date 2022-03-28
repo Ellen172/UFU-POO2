@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=ComandoCondicional
+comment0.text=\ \r\n\ O\ m\u00E9todo\ execute()\ de\ um\ comando\ condicional\ deve\ gerar\ um\ n\u00FAmero\ \r\n\ aleat\u00F3rio\ entre\ 0\ e\ 1.\ Caso\ o\ resultado\ seja\ menor\ que\ 0,5,\ \r\n\ o\ if\ deve\ ser\ executado.\ Caso\ contr\u00E1rio,\ o\ else\ deve\ ser\ executado\r\n
+comment1.params=nome\ comandoif\ comandoelse
+comment1.target=ComandoCondicional(java.lang.String,\ Comando,\ Comando)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3

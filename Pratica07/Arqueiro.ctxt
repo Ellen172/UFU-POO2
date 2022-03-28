@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Arqueiro
+comment0.text=\ \r\n\ Personagem\:\ arqueiro\ \r\n\ Ataque\:\ arco\ e\ flecha\ |\ flecha\ com\ fogo\ \r\n\ Corrida\:\ media\r\n\ Pulo\:\ alto\r\n
+comment1.params=x\ y
+comment1.target=Arqueiro(int,\ int)
+numComments=2

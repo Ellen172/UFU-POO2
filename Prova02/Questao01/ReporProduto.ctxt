@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=ReporProduto
+comment1.params=fornecedor
+comment1.target=ReporProduto(Fornecedor)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3

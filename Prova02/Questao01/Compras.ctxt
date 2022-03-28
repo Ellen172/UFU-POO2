@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Compras
+comment1.params=reposicao
+comment1.target=Compras(Reposicao)
+comment2.params=reposicao
+comment2.target=void\ setReposicao(Reposicao)
+comment3.params=
+comment3.target=void\ pedirReposicao()
+numComments=4

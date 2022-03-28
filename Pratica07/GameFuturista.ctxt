@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=GameFuturista
+comment1.params=
+comment1.target=Game\ getGame()
+comment2.params=x\ y
+comment2.target=Personagem\ createPersonagem(int,\ int)
+comment3.params=x\ y
+comment3.target=Inimigo\ createInimigo(int,\ int)
+numComments=4

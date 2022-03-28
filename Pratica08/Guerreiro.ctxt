@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.target=Guerreiro
+comment0.text=\ \r\n\ Personagem\:\ guerreiro\ \r\n\ Ataque\:\ espada\ |\ veneno\r\n\ Corrida\:\ rapida\r\n\ Pulo\:\ baixo\r\n
+comment1.params=x\ y
+comment1.target=Guerreiro(int,\ int)
+numComments=2

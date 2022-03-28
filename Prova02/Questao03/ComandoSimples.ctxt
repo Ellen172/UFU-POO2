@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=ComandoSimples
+comment0.text=\ \r\n\ O\ m\u00E9todo\ execute()\ de\ um\ comando\ simples\ deve\ mostrar\ o\ nome\ do\ comando,\ \r\n\ fornecido\ em\ seu\ construtor.\r\n
+comment1.params=nome
+comment1.target=ComandoSimples(java.lang.String)
+comment2.params=
+comment2.target=void\ execute()
+numComments=3
